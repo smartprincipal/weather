@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Weather</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+  <a href="index.html" class="logo">DARK WEATHER</a>
+  <!-- <p class="logo">DARK WEATHER</p> -->
+
+  <div class="hamburger">&#9776</div>
+  <div class="close">&times</div>
+
+  <nav class="navbar">
+   <ul class="menu">
+    <Li><a href="#">Home</a></Li>
+    <Li><a href="#">Download App</a></Li>
+    <Li><a href="#">Contact Us</a></Li>
+   </ul>
+   <button class="btn1" type="submit">Sign Up</button>
+  </nav>
+ </header>
+
+ <h2 class="content1">
+  Seeing the weather of the whole world with <a class="content1a" href="#">Dark Weather!</a>
+ </h2>
+
+ <div class="searchRow">
+  <div class="searchBox">
+   <input type="search" name="country" id="countryState" placeholder="Search Here">
+  </div>
+  <div class="tempRange">
+   <p class="filter">Filters</p>
+   <select name="temp" id="temp">
+    <option value="Coldest">Coldest</option>
+   <option value="Warm">Warm</option>
+   <option value="Hot">Hot</option>
+   <option value="Wild-fire">Wild-fire</option>
+   </select>
+   <select name="degree" id="degree">
+    <option value="10℃ - 20℃">10℃ - 20℃</option>
+   <option value="21℃ - 30℃">21℃ - 30℃</option>
+   <option value="31℃ - 40℃">31℃ - 40℃</option>
+   <option value="41℃ - 60℃">41℃ - 60℃</option>
+   </select>
+   <select name="weather" id="weather">
+    <option value="Rainy">Rainy</option>
+   <option value="Sunny">Sunny</option>
+   <option value="Winter">Winter</option>
+   <option value="Snowwy">Snowwy</option>
+   </select>
+  </div>
+ </div>
+
+ <section class="imageWeather">
+  <div class="border">
+   <div class="details">
+    <p class="country">Liberia 35℃</p>
+    <p class="wind"> Wind speed : 11km</p>
+    <p class="wind">Tuesday: 19:52</p>
+    <p class="wind">Cloudy Value</p>
+   </div>
+   <img class="cloudyImage" src="asset/cloudy.png" alt="cloudy">
+  </div>
+  <div class="border">
+   <div class="details">
+    <p class="country">Liberia 35℃</p>
+    <p class="wind"> Wind speed : 11km</p>
+    <p class="wind">Tuesday: 19:52</p>
+    <p class="wind">Cloudy Value</p>
+   </div>
+   <img class="sunnyImage" src="asset/sunny.png" alt="sunny">
+  </div>
+  <div class="border">
+   <div class="details">
+    <p class="country">Liberia 35℃</p>
+    <p class="wind"> Wind speed : 11km</p>
+    <p class="wind">Tuesday: 19:52</p>
+    <p class="wind">Cloudy Value</p>
+   </div>
+   <img class="rainImage" src="asset/Rain.png" alt="rain">
+  </div>
+ </section>
+ <script src="script.js"></script>
+</body>
+</html>
