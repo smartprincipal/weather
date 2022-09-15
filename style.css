@@ -25,7 +25,7 @@ header{
  font-size: 50px;
  font-weight: bolder;
  position: absolute;
- right: -50px;
+ right: 60px;
  cursor: pointer;
 }
 .close{
@@ -40,14 +40,20 @@ header{
 .menu{
  display: flex;
  list-style-type: none;
+ margin-left: 100px;
 }
 .menu a{
  text-decoration: none;
  color: #fff;
- margin-right: 100px;
+ margin-left: 50px;
  font-size: 25px;
 }
 
+#myCountry{
+display: none;
+ color:white;
+ width: 100px;
+}
 .menu a:hover{
  text-decoration: underline;
  color: gold;
@@ -78,12 +84,12 @@ cursor: pointer;
  text-decoration: none;
 }
 .searchRow{
- width: 85%;
+ width: 50%;
  margin-left: auto;
  margin-right: auto;
  margin-top: 35px;
  display: flex;
- justify-content: space-between;
+ justify-content: center;
 }
 #countryState{
  background: #24343D;
@@ -92,13 +98,17 @@ border: none;
 width: 358px;
 height: 80px;
 border-radius: 12px;
+color: #fff;
+font-size: 24px;
+padding-left: 20px;
 }
 #countryState::placeholder{
  color: #fff;
  Padding: 30px;
  font-size: 20px;
+ 
 }
-.tempRange{
+/* .tempRange{
  width: 730px;
  height: 80px;
  color: #fff;
@@ -142,17 +152,13 @@ color: #fff;
 cursor: pointer;
 padding: 5px 25px ;
 font-size: 23px;
-}
+} */
 .imageWeather{
  display: flex;
- /* flex-wrap: wrap; */
- position: relative;
- justify-content: space-between;
- width: 85%;
+ /* width: 50%; */
  margin-left: auto;
  margin-right: auto;
- margin-top: 0px;
- margin-bottom: 0px;
+ justify-content: center;
 }
 .border{
  width: 355px;
@@ -169,8 +175,8 @@ border-radius: 20px;
 }
 .sunnyImage{
  position: relative;
- top: -375px;
- left: 40px;
+ top: -315px;
+ left: 80px;
 }
 .rainImage{
  position:relative;
@@ -180,9 +186,9 @@ border-radius: 20px;
 .details{
  color: #fff;
  position: relative ;
- top: 200px;
+ top: 150px;
  line-height: 65px;
- padding-left: 53px;
+ padding-left: 70px;
  font-weight: 300px;
  font-size: 40px;
 }
@@ -194,7 +200,11 @@ border-radius: 20px;
 /* Mobile screen max-width 360px */
 @media screen and (max-width: 800px) {
  header{
-  margin-left: 2rem;8li
+  margin-left: 1rem;
+  justify-content: flex-start;
+ }
+ .logo{
+  margin-left: 30px;
  }
  .hamburger{
   display: block;
@@ -202,7 +212,7 @@ border-radius: 20px;
  .close{
   position: absolute;
   top: 20px;
-  right: -60px;
+  right: 60px;
  }
  .menu{
   display:none;
@@ -233,5 +243,14 @@ border-radius: 20px;
 }
 .deactive {
 display: none;
+}
+.content1{
+ 
+ width: 300px;
+ text-align: center;
+ /* margin-left: 30px; */
+ /* margin-right: 0px; */
+ font-size: 45px;
+ line-height: 55px;
 }
 }

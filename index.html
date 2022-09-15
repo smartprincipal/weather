@@ -21,8 +21,8 @@
     <Li><a href="#">Download App</a></Li>
     <Li><a href="#">Contact Us</a></Li>
    </ul>
-   <button class="btn1" type="submit">Sign Up</button>
   </nav>
+  <button class="btn1" type="submit">Sign Up</button>
  </header>
 
  <h2 class="content1">
@@ -33,7 +33,7 @@
   <div class="searchBox">
    <input type="search" name="country" id="countryState" placeholder="Search Here">
   </div>
-  <div class="tempRange">
+  <!-- <div class="tempRange">
    <p class="filter">Filters</p>
    <select name="temp" id="temp">
     <option value="Coldest">Coldest</option>
@@ -53,38 +53,21 @@
    <option value="Winter">Winter</option>
    <option value="Snowwy">Snowwy</option>
    </select>
-  </div>
+  </div> -->
  </div>
 
  <section class="imageWeather">
   <div class="border">
    <div class="details">
-    <p class="country">Liberia 35℃</p>
-    <p class="wind"> Wind speed : 11km</p>
-    <p class="wind">Tuesday: 19:52</p>
+    <p class="country" id="countryName" ></p>
+    <p class="wind" id="wind"></p>
+    <p class="wind" id="gets"></p>
     <p class="wind">Cloudy Value</p>
    </div>
-   <img class="cloudyImage" src="asset/cloudy.png" alt="cloudy">
-  </div>
-  <div class="border">
-   <div class="details">
-    <p class="country">Liberia 35℃</p>
-    <p class="wind"> Wind speed : 11km</p>
-    <p class="wind">Tuesday: 19:52</p>
-    <p class="wind">Cloudy Value</p>
-   </div>
-   <img class="sunnyImage" src="asset/sunny.png" alt="sunny">
-  </div>
-  <div class="border">
-   <div class="details">
-    <p class="country">Liberia 35℃</p>
-    <p class="wind"> Wind speed : 11km</p>
-    <p class="wind">Tuesday: 19:52</p>
-    <p class="wind">Cloudy Value</p>
-   </div>
-   <img class="rainImage" src="asset/Rain.png" alt="rain">
+   <img class="sunnyImage" src="" alt="sunny" id="img">
   </div>
  </section>
+ <p id="myCountry"></p>
  <script src="script.js"></script>
 </body>
 </html>

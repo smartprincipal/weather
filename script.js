@@ -19,19 +19,17 @@ cancel.addEventListener('click', () => {
 })
 
 let getUserLocation = () => {
+
  if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(getWeatherAPI)
-  navigator.geolocation.getCurrentPosition((position) => {
-   latitude = position.coords.latitude
-   longitude =  position.coords.longitude
-   console.log(position)
-  })
+  }
+  else{
+    alert("oops sorry")
+  }
+   
+   
+  };
 
- }else{
-  alert('Geolocation is not supported')
-
- }
-} 
 
 let apiKey= '9c324df5a674b284755eae3dadb30b0f'
 let baseURL = 'https://api.openweathermap.org/data/2.5/weather'
@@ -43,15 +41,19 @@ let getWeatherAPI  = (position) => {
 )
 .then((res) => res.json())
 .then ((data) => {
-  // JSON.stringify(data)
-  // console.log(data)
- let country = document.querySelector('.country')
- country.innerText = JSON.stringify(data)
+  JSON.stringify(data)
+  var para = document.getElementById('myCountry')
+  para.innerText = JSON.stringify(data)
+  var img = document.getElementById('img')
+  img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
+  var country = document.getElementById('countryName')
+  country.innerText = "Country:" +" " + (data.sys.country)
+  var wind = document.getElementById('wind')
+  wind.innerText="Windspeed:" + " " + JSON.stringify(data.wind.speed)+ "km"
+  var gets = document.getElementById('gets')
+  gets.innerText = (data.weather.main)
 })
  }
 
 
- function showweather(data) {
-  let{humidity pressure sunrise}
- }
- getUserLocation()
+getUserLocation()
