@@ -25,7 +25,7 @@ header{
  font-size: 50px;
  font-weight: bolder;
  position: absolute;
- right: 60px;
+ right: 20px;
  cursor: pointer;
 }
 .close{
@@ -204,7 +204,7 @@ border-radius: 20px;
   justify-content: flex-start;
  }
  .logo{
-  margin-left: 30px;
+  margin-left: 0px;
  }
  .hamburger{
   display: block;
@@ -212,13 +212,13 @@ border-radius: 20px;
  .close{
   position: absolute;
   top: 20px;
-  right: 60px;
+  right: 20px;
  }
  .menu{
   display:none;
   height: 110vh;
   position: relative;
-  top: 100px;
+  top: 25px;
   width: 300px;
   /* justify-content: center; */
   /* align-content: center; */
@@ -226,6 +226,9 @@ border-radius: 20px;
  .menu li{
   margin-top: 50px;
   /* justify-content: center; */
+ }
+ .menu a{
+  margin-left: -30px;
  }
  .navbar{
   margin-top: 40px;
@@ -252,5 +255,26 @@ display: none;
  /* margin-right: 0px; */
  font-size: 45px;
  line-height: 55px;
+}
+#countryState{
+ background: #24343D;
+box-shadow: inset 10px 10px 30px rgba(36, 52, 61, 0.6);
+border: none;
+width: 310px;
+height: 80px;
+border-radius: 12px;
+color: #fff;
+font-size: 24px;
+padding-left: 20px;
+}
+.border{
+ width: 310px;
+ border: 2px solid gold;
+}
+.details{
+ padding-left: 40px;
+}
+.sunnyImage{
+ left: 40px;
 }
 }
